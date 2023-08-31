@@ -1,12 +1,17 @@
+$bg-color: #0B1D26;
+$text-color: #FFFFFF;
+$accent-color: #FBD784;
+$font-roboto: 'Roboto', sans-serif;
+$font-baskerville: 'Libre Baskerville', serif;
+
 /*  Reset and base styles  */
 * {
-  padding: 0px;
-  margin: 0px;
-  border: none;
+	padding: 0px;
+	margin: 0px;
+	border: none;
 }
-
 a {
-  color: #FFFFFF;
+  color: $text-color;
   text-decoration: none;
 }
 
@@ -14,10 +19,9 @@ body {
   background-image: url(/img/background.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-color: #0B1D26;
-  color: #FFFFFF;
+  background-color: $bg-color;
+  color: $text-color;
 }
-
 .wrapper {
   max-width: 1170px;
   margin: 60px auto;
@@ -29,29 +33,25 @@ body {
   justify-content: space-between;
   margin-bottom: 198px;
 }
-
 .logo {
-  font-family: "Libre Baskerville", serif;
+  font-family: $font-baskerville;
   font-size: 32px;
 }
-
 .menu {
   display: flex;
   width: 283px;
   justify-content: space-between;
   align-items: center;
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
   font-size: 18px;
 }
-
 .login {
   display: flex;
   align-items: center;
 }
-
 .login__text {
   padding-left: 8px;
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
   font-size: 17px;
 }
 
@@ -60,24 +60,35 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
 .social {
   width: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-
 .social__text {
   align-items: center;
-  font-family: "Roboto", sans-serif;
+  font-family: $font-roboto;
   font-size: 17px;
   transform: rotate(90deg);
   margin-bottom: 24px;
 }
-
+.content {
+}
+.text-accent {
+}
 .title {
-  font-family: "Libre Baskerville", serif;
+  font-family: $font-baskerville;
   font-size: 70px;
   font-weight: 700;
-}/*# sourceMappingURL=style.css.map */
+}
+.scroll {
+}
+.scroll__text {
+}
+.scroll__arrow {
+}
+.slider {
+}
+.slider__link {
+}
