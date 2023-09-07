@@ -66,6 +66,7 @@ body {
 .header-content {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 400px;
 }
 
 .social {
@@ -141,4 +142,16 @@ body {
 }
 .slider__link:hover {
   border-right: 3px solid #ffffff;
+}
+
+/* Content-block */
+.number-title {
+  color: rgba(229, 229, 229, 0.062745098);
+  font-family: "Roboto", sans-serif;
+  font-size: 240px;
+  position: absolute;
+}
+
+.content {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

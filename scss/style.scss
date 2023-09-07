@@ -1,5 +1,6 @@
 $bg-color: #0b1d26;
 $text-color: #ffffff;
+$number-color: #e5e5e510;
 $accent-color: #fbd784;
 $slider-color: #ffffff82;
 $font-roboto: 'Roboto', sans-serif;
@@ -66,6 +67,7 @@ body {
 .header-content {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 400px;
 }
 .social {
   display: flex;
@@ -134,4 +136,35 @@ body {
   &:hover {
     border-right: 3px solid $text-color;
   }
+}
+
+/* Content-block */
+.content-block {
+}
+.content_left {
+}
+.content_right {
+}
+.number-title {
+  color: $number-color;
+  font-family: $font-roboto;
+  font-size: 240px;
+  position: absolute;
+}
+.content {
+  display: flex;
+}
+.content__title {
+}
+.content__text {
+}
+.more {
+}
+.more__text {
+}
+.more__arrow {
+}
+.img__right {
+}
+.img__left {
 }
