@@ -6,28 +6,31 @@
 }
 
 a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
+/* Page style */
 body {
-  background-image: url(/img/background.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-color: #0B1D26;
-  color: #FFFFFF;
+  background-color: #0b1d26;
+  color: #ffffff;
 }
 
 .wrapper {
   max-width: 1170px;
-  margin: 60px auto;
+  margin: 0 auto;
+  padding: 0 50px;
+  background-image: url(/img/background.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 /*  Header-nav  */
 .header-nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 198px;
+  margin-bottom: 200px;
+  padding-top: 60px;
 }
 
 .logo {
@@ -49,6 +52,10 @@ body {
   align-items: center;
 }
 
+.login__icon {
+  height: 24px;
+}
+
 .login__text {
   padding-left: 8px;
   font-family: "Roboto", sans-serif;
@@ -62,22 +69,76 @@ body {
 }
 
 .social {
-  width: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 .social__text {
-  align-items: center;
+  display: flex;
+  writing-mode: vertical-lr;
   font-family: "Roboto", sans-serif;
   font-size: 17px;
-  transform: rotate(90deg);
+  margin: 24px 0;
+}
+
+.social__icon {
   margin-bottom: 24px;
 }
 
-.title {
-  font-family: "Libre Baskerville", serif;
-  font-size: 70px;
+.text-accent {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  color: #fbd784;
   font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.line:before {
+  position: relative;
+  top: -9.6px;
+  width: 72px;
+  margin-right: 32px;
+  content: "";
+  border-bottom: 2px solid #fbd784;
+  vertical-align: middle;
+}
+
+.title {
+  width: 800px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 60px;
+  font-weight: 700;
+  padding: 32px 0;
+}
+
+.scroll {
+  display: flex;
+  width: 24px;
+}
+
+.scroll__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 16px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: right;
+}
+
+.slider__link {
+  padding: 21.7px 72px 21.7px 0;
+  border-right: 3px solid rgba(255, 255, 255, 0.5098039216);
+}
+.slider__link:hover {
+  border-right: 3px solid #ffffff;
 }/*# sourceMappingURL=style.css.map */
