@@ -23,12 +23,18 @@ body {
   color: $text-color;
 }
 .wrapper {
+  position: relative;
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 80px;
-  background-image: url('../img/background.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
+  &__bg {
+    position: absolute;
+    width: 1330px;
+    max-height: 1160px;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+  }
 }
 
 @import 'header/header';
