@@ -1,0 +1,87 @@
+@include mobile {
+  .header-nav {
+    margin-bottom: 150px;
+    padding-top: 30px;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  .header-content {
+    margin-bottom: 300px;
+  }
+  .social {
+    &__text {
+      margin: 20px 0;
+    }
+    &__icon {
+      margin-bottom: 10px;
+    }
+  }
+  .accent {
+    padding: 0 35px;
+  }
+  .text-accent {
+    font-size: 15px;
+    &::before {
+      @include line(50px, 25px);
+    }
+  }
+  .title {
+    width: 100%;
+    font-size: 40px;
+  }
+  .slider {
+    &__link {
+      padding: 10px 30px 10px 0;
+    }
+  }
+}
+@include tablet {
+  .header-nav {
+    margin-bottom: 180px;
+    padding-top: 50px;
+  }
+  .header-content {
+    margin-bottom: 300px;
+  }
+  .accent {
+    padding: 0 45px;
+  }
+  .text-accent {
+    font-size: 16px;
+    &::before {
+      @include line(60px, 30px);
+    }
+  }
+  .title {
+    width: 100%;
+    font-size: 43px;
+  }
+  .slider {
+    &__link {
+      padding: 10px 30px 10px 0;
+    }
+  }
+}
+@include desktop {
+  .header-content {
+    margin-bottom: 300px;
+  }
+  .accent {
+    padding: 0 40px 0 35px;
+  }
+  .text-accent {
+    &::before {
+      @include line(65px, 30px);
+    }
+  }
+  .title {
+    width: 100%;
+    font-size: 52px;
+  }
+  .slider {
+    &__link {
+      padding: 10px 30px 10px 0;
+    }
+  }
+}

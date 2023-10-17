@@ -59,16 +59,8 @@
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 5px;
-}
-.line {
-  &:before {
-    position: relative;
-    top: -9.6px;
-    width: 72px;
-    margin-right: 32px;
-    content: '';
-    border-bottom: 2px solid $accent-color;
-    vertical-align: middle;
+  &::before {
+    @include line(72px, 32px);
   }
 }
 .title {

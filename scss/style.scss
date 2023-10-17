@@ -17,6 +17,16 @@ a {
   text-decoration: none;
 }
 
+@mixin line($width, $right) {
+  position: relative;
+  top: -9.6px;
+  width: $width;
+  margin-right: $right;
+  content: '';
+  border-bottom: 2px solid $accent-color;
+  vertical-align: middle;
+}
+
 /* Page style */
 body {
   background-color: $bg-color;
@@ -37,6 +47,47 @@ body {
   }
 }
 
-@import 'header/header';
-@import 'content/content';
-@import 'footer/footer';
+/* Break points map */
+$breakpoints: (
+  'sm': '(min-width: 576px) and (max-width: 767px)',
+  'md': '(min-width: 768px) and (max-width: 1023px)',
+  'lg': '(min-width: 1024px) and (max-width: 1279px)',
+  'xl': '(min-width: 1280px)',
+);
+
+@mixin desktop() {
+  @media (map-get($breakpoints, lg)) {
+    .wrapper {
+      padding: 0 20px;
+      &__bg {
+        width: max-content;
+      }
+    }
+    @content;
+  }
+}
+@mixin tablet() {
+  @media (map-get($breakpoints, md)) {
+    .wrapper {
+      padding: 0 20px;
+      &__bg {
+        width: max-content;
+      }
+    }
+    @content;
+  }
+}
+@mixin mobile() {
+  @media (map-get($breakpoints, sm)) {
+    .wrapper {
+      padding: 0 10px;
+      &__bg {
+        width: max-content;
+        max-height: 1000px;
+      }
+    }
+    @content;
+  }
+}
+
+@import './header/index', 'content/index', 'footer/index';
