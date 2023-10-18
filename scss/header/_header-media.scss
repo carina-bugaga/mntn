@@ -1,3 +1,47 @@
+@include mobile-xs {
+  .header-nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 30px 0;
+    margin-bottom: 0;
+  }
+  .menu {
+    display: none;
+  }
+  .login {
+    &__text {
+      font-size: 17px;
+    }
+  }
+  .header-content {
+    display: block;
+    padding: 0 5px;
+    margin-bottom: 200px;
+  }
+  .social {
+    display: none;
+  }
+  .text-accent {
+    padding: 70px 0 10px 0;
+    font-size: 18px;
+    &::before {
+      @include line(45px, 16px);
+    }
+  }
+  .title {
+    width: 100%;
+    font-size: 45px;
+    padding: 28px 0;
+  }
+  .scroll {
+    &__text {
+      font-size: 17px;
+    }
+  }
+  .slider {
+    display: none;
+  }
+}
 @include mobile {
   .header-nav {
     margin-bottom: 150px;
@@ -32,7 +76,7 @@
   }
   .slider {
     &__link {
-      padding: 10px 30px 10px 0;
+      padding: 21.7px 30px 21.7px 0;
     }
   }
 }
@@ -59,7 +103,7 @@
   }
   .slider {
     &__link {
-      padding: 10px 30px 10px 0;
+      padding: 21.7px 30px 21.7px 0;
     }
   }
 }
@@ -81,7 +125,7 @@
   }
   .slider {
     &__link {
-      padding: 10px 30px 10px 0;
+      padding: 21.7px 30px 21.7px 0;
     }
   }
 }

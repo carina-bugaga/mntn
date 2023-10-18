@@ -1,3 +1,26 @@
+@include mobile-xs {
+  /* Footer-block */
+  .footer-block {
+    display: inline-block;
+    margin-bottom: 100px;
+  }
+  .footer-info {
+    &__logo {
+      padding: 7px 0;
+      margin-bottom: 24px;
+    }
+    &__text {
+      font-style: 20px;
+      margin-bottom: 60px;
+    }
+  }
+  .copyright {
+    font-size: 18px;
+  }
+  .footer-links {
+    display: none;
+  }
+}
 @include mobile {
   .footer-info {
     &__logo {
