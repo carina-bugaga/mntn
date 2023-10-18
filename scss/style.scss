@@ -60,10 +60,6 @@ $breakpoints: (
   @media (map-get($breakpoints, lg)) {
     .wrapper {
       padding: 0 20px;
-      &__bg {
-        min-width: 576px;
-        max-width: 767px;
-      }
     }
     @content;
   }
@@ -73,7 +69,8 @@ $breakpoints: (
     .wrapper {
       padding: 0 20px;
       &__bg {
-        width: max-content;
+        display: block;
+        width: 100%;
       }
     }
     @content;
@@ -84,8 +81,8 @@ $breakpoints: (
     .wrapper {
       padding: 0 10px;
       &__bg {
-        width: max-content;
-        max-height: 1000px;
+        display: block;
+        width: 100%;
       }
     }
     @content;
@@ -96,8 +93,8 @@ $breakpoints: (
     .wrapper {
       padding: 0 5px;
       &__bg {
-        width: max-content;
-        max-height: 800px;
+        display: block;
+        width: 100%;
       }
     }
     @content;
